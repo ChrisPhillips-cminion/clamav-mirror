@@ -3,7 +3,7 @@ set -eo pipefail
 
 CVD_DIR="${CVD_DIR:=/mnt/cvdupdate}"
 
-mkdir ${CVD_DIR}/databases
+mkdir ${CVD_DIR}/databases || true
 # Configuration Functions
 check_config() {
     if [ ! -e $CVD_DIR/config.json ]; then
