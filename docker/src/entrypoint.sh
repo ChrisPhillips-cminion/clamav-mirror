@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eo pipefail
-mkdir /mnt/home/
+mkdir /mnt/cvdupdate/home/
 export HOME=/mnt/cvdupdate/home/
 CVD_DIR="${CVD_DIR:=/mnt/cvdupdate}"
 
