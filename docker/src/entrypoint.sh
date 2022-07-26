@@ -4,7 +4,7 @@ mkdir /mnt/cvdupdate/home/ || true
 export HOME=/mnt/cvdupdate/home/
 CVD_DIR="${CVD_DIR:=/mnt/cvdupdate}"
 
-mkdir ${CVD_DIR}/databases || true
+
 # Configuration Functions
 check_config() {
     if [ ! -e $CVD_DIR/config.json ]; then
