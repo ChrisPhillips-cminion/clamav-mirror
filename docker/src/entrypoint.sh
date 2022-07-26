@@ -26,6 +26,7 @@ check_database() {
     if [ ! -e $CVD_DIR/databases ]; then
         echo "Missing CVD database directory. Attempting to update..."
         check_config
+        mkdir /mnt/cvdupdate/databases/ || true
         show_config
         update_database
     fi
